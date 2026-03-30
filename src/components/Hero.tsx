@@ -1,39 +1,36 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import Terminal from './Terminal';
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-screen flex flex-col items-center justify-center">
+    <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-screen flex flex-col items-start justify-center max-w-5xl mx-auto">
       <div className="scanline" />
       
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-12 relative z-20"
+        className="mb-12 relative z-20 w-full"
       >
-        <div className="inline-block px-3 py-1 mb-4 border border-cyber-green/30 bg-cyber-green/10 rounded-full">
-          <span className="text-cyber-green font-mono text-xs uppercase tracking-[0.2em]">
-            Security Researcher & Student
-          </span>
-        </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tighter leading-none">
-          Maicon Mafra
-        </h1>
-        <p className="text-gray-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
-          Securing the digital frontier. Passionate about ethical hacking, defensive security, and building resilient systems. 
-          Documenting my journey through the complex world of cybersecurity.
+        <p className="text-cyber-green font-mono mb-5 ml-1">
+          Olá, meu nome é
         </p>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="w-full max-w-4xl relative z-20"
-      >
-        <Terminal />
+        <h1 className="text-5xl sm:text-7xl font-bold text-white mb-4 tracking-tight leading-none">
+          Maicon Mafra.
+        </h1>
+        <h2 className="text-4xl sm:text-6xl font-bold text-gray-400 mb-6 tracking-tight leading-none">
+          Eu protejo o mundo digital.
+        </h2>
+        <p className="text-gray-400 max-w-xl text-lg leading-relaxed mb-12">
+          Sou um pesquisador de segurança e estudante de cibersegurança apaixonado por hacking ético, segurança defensiva e construção de sistemas resilientes. Documentando minha jornada pelo complexo mundo da cibersegurança.
+        </p>
+        
+        <a 
+          href="#projects" 
+          className="inline-block px-7 py-4 border border-cyber-green text-cyber-green font-mono rounded hover:bg-cyber-green/10 transition-colors"
+        >
+          Confira meus projetos!
+        </a>
       </motion.div>
 
       {/* Decorative elements */}
