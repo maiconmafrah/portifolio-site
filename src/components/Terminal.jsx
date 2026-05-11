@@ -13,8 +13,8 @@ const COMMANDS = {
 
 export default function Terminal() {
   const [input, setInput] = useState('');
-  const [history, setHistory] = useState<string[]>(['Welcome to CyberSec Terminal v1.0.0', 'Type "help" to see available commands.']);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const [history, setHistory] = useState(['Welcome to CyberSec Terminal v1.0.0', 'Type "help" to see available commands.']);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -22,7 +22,7 @@ export default function Terminal() {
     }
   }, [history]);
 
-  const handleCommand = (e: React.FormEvent) => {
+  const handleCommand = (e) => {
     e.preventDefault();
     const cmd = input.toLowerCase().trim();
     if (!cmd) return;
@@ -33,7 +33,7 @@ export default function Terminal() {
       setInput('');
       return;
     } else if (cmd in COMMANDS) {
-      response = COMMANDS[cmd as keyof typeof COMMANDS];
+      response = COMMANDS[cmd];
     } else {
       response = `Command not found: ${cmd}. Type "help" for assistance.`;
     }

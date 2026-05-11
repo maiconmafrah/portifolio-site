@@ -11,7 +11,7 @@ const SKILLS = [
   { name: 'System Admin', icon: <Cpu size={24} />, level: 92, tags: ['Linux', 'Windows Server', 'Docker'] },
 ];
 
-export default function Skills() {
+export default function About() {
   return (
     <section id="about" className="py-24 px-4 max-w-4xl mx-auto">
       <div className="flex items-center gap-4 mb-12">
@@ -42,15 +42,30 @@ export default function Skills() {
           </ul>
         </div>
         
-        <div className="md:col-span-2 relative group">
+        <div className="md:col-span-2 relative group flex flex-col items-center gap-8">
           <div className="relative w-full max-w-[300px] mx-auto aspect-square rounded bg-cyber-green/20 border-2 border-cyber-green transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
             <div className="absolute inset-0 bg-cyber-dark/50 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-300" />
             <img 
-              src="https://picsum.photos/seed/maicon/400/400" 
+              src="https://picsum.photos/seed/hacker/400/400" 
               alt="Maicon Mafra" 
               className="w-full h-full object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-300 -translate-x-4 -translate-y-4 group-hover:-translate-x-5 group-hover:-translate-y-5"
               referrerPolicy="no-referrer"
             />
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[300px]">
+            <a 
+              href="#contact" 
+              className="flex-1 text-center py-3 px-4 bg-cyber-green text-black font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-cyber-green/80 transition-colors"
+            >
+              Fale Comigo
+            </a>
+            <a 
+              href="#" 
+              className="flex-1 text-center py-3 px-4 border border-cyber-green text-cyber-green font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-cyber-green/10 transition-colors"
+            >
+              Baixar CV
+            </a>
           </div>
         </div>
       </div>

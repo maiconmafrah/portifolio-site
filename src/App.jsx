@@ -7,6 +7,7 @@ import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
@@ -14,8 +15,8 @@ import Footer from './components/Footer';
 
 export default function App() {
   useEffect(() => {
-    const handleAnchorClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
+    const handleAnchorClick = (e) => {
+      const target = e.target;
       const anchor = target.closest('a');
       
       // Check if it's an anchor link pointing to an ID on the same page
@@ -28,11 +29,11 @@ export default function App() {
           const startPosition = window.scrollY;
           // Subtract 80px to account for the fixed navbar height
           const distance = targetPosition - startPosition - 80;
-          // Duration in milliseconds (1200ms = 1.2s for a very smooth, deliberate scroll)
-          const duration = 1200;
-          let start: number | null = null;
+          // Duration in milliseconds (1600ms = 1.6s for a balanced scroll)
+          const duration = 1600;
+          let start = null;
 
-          const animation = (currentTime: number) => {
+          const animation = (currentTime) => {
             if (start === null) start = currentTime;
             const timeElapsed = currentTime - start;
             const progress = Math.min(timeElapsed / duration, 1);
@@ -67,6 +68,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Certifications />

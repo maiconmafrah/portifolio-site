@@ -4,7 +4,7 @@ import { Award, CheckCircle2 } from 'lucide-react';
 
 const CERTS = [
   { name: 'CompTIA Security+', issuer: 'CompTIA', date: '2024', status: 'Ativo' },
-  { name: 'Certified Ethical Hacker (CEH)', issuer: 'EC-Council', date: '2025', status: 'Ativo' },
+  { name: 'Teste CEH', issuer: 'EC-Council', date: '2025', status: 'Ativo' },
   { name: 'eLearnSecurity Junior Penetration Tester (eJPT)', issuer: 'INE', date: '2024', status: 'Ativo' },
   { name: 'AWS Certified Security - Specialty', issuer: 'Amazon', date: '2025', status: 'Em Andamento' },
 ];
@@ -14,7 +14,7 @@ export default function Certifications() {
     <section id="certs" className="py-24 px-4 max-w-5xl mx-auto">
       <div className="flex items-center gap-4 mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-2">
-          <span className="text-cyber-green font-mono text-xl md:text-2xl font-normal">04.</span> Certificações
+          <span className="text-cyber-green font-mono text-xl md:text-2xl font-normal">05.</span> Certificações
         </h2>
         <div className="h-[1px] flex-1 bg-cyber-border max-w-[300px]" />
       </div>

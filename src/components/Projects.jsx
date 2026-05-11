@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ExternalLink, Github, Terminal as TerminalIcon } from 'lucide-react';
+import GithubStats from './GithubStats';
 
 const PROJECTS = [
   {
@@ -31,7 +32,7 @@ export default function Projects() {
     <section id="projects" className="py-24 px-4 max-w-5xl mx-auto">
       <div className="flex items-center gap-4 mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-2">
-          <span className="text-cyber-green font-mono text-xl md:text-2xl font-normal">03.</span> Projetos
+          <span className="text-cyber-green font-mono text-xl md:text-2xl font-normal">04.</span> Projetos
         </h2>
         <div className="h-[1px] flex-1 bg-cyber-border max-w-[300px]" />
       </div>
@@ -78,6 +79,14 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <GithubStats />
+      </motion.div>
     </section>
   );
 }
