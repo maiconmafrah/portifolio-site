@@ -5,7 +5,7 @@ import GithubStats from './GithubStats';
 
 const PROJECTS = [
   {
-    title: 'Enterprise Home Lab',
+    title: 'Soc lab Wazuh',
     description: 'Um cluster Proxmox multi-node rodando pfSense, Active Directory e várias distribuições Linux para testes de segurança e monitoramento de rede.',
     tags: ['Proxmox', 'pfSense', 'Active Directory', 'Splunk'],
     github: '#',

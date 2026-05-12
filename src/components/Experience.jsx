@@ -6,7 +6,7 @@ const EXPERIENCES = [
   {
     id: 1,
     type: 'work',
-    title: 'Analista de Segurança Júnior',
+    title: 'Assistente de Infraestrutura',
     company: 'Tech Security Corp',
     date: '2025 - Presente',
     description: 'Atuação em testes de invasão em aplicações web, análise de vulnerabilidades e elaboração de relatórios técnicos. Auxílio na resposta a incidentes de segurança.',
@@ -15,18 +15,18 @@ const EXPERIENCES = [
   {
     id: 2,
     type: 'education',
-    title: 'Bacharelado em Ciência da Computação',
-    company: 'Universidade Federal',
-    date: '2022 - 2026',
-    description: 'Foco em redes de computadores, sistemas operacionais e segurança da informação. Participação ativa em grupos de pesquisa de cibersegurança.',
+    title: 'Tecnólogo em Redes de computadores',
+    company: 'Unisosiesc',
+    date: '2022 - 2025',
+    description: 'Foco em redes de computadores, sistemas operacionais e segurança da informação.',
     skills: ['C/C++', 'Redes', 'Sistemas Operacionais', 'Criptografia']
   },
   {
     id: 3,
     type: 'work',
-    title: 'Estágio em Infraestrutura e Redes',
-    company: 'DataCenter Solutions',
-    date: '2023 - 2024',
+    title: 'Pós em Segurança Cibernética',
+    company: 'Uninter',
+    date: '2025 - 2026',
     description: 'Monitoramento de redes, configuração de firewalls e switches, e suporte a servidores Linux e Windows.',
     skills: ['Linux', 'Firewalls', 'Monitoramento', 'Suporte']
   }

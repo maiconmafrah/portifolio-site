@@ -19,10 +19,10 @@ export default function Hero() {
           Maicon Mafra.
         </h1>
         <h2 className="text-4xl sm:text-6xl font-bold text-gray-400 mb-6 tracking-tight leading-none">
-          Eu protejo o mundo digital.
+          Especialista em infraestrutura segura e monitoramento de ameaças.
         </h2>
         <p className="text-gray-400 max-w-xl text-lg leading-relaxed mb-12">
-          Sou um pesquisador de segurança e estudante de cibersegurança apaixonado por hacking ético, segurança defensiva e construção de sistemas resilientes. Documentando minha jornada pelo complexo mundo da cibersegurança.
+          Analista de infraestrutura com foco em segurança defensiva e resiliência de sistemas. Especializado na administração de servidores Linux e na implementação de soluções de monitoramento SIEM, transformo laboratórios técnicos em documentação prática sobre proteção de redes e resposta a incidentes.
         </p>
         
         <a 
