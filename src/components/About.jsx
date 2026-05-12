@@ -24,10 +24,10 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
         <div className="md:col-span-3 text-gray-400 text-lg leading-relaxed space-y-4">
           <p>
-            Olá! Meu nome é Maicon e sou apaixonado por descobrir como as coisas funcionam (e como protegê-las). Meu interesse em cibersegurança começou quando percebi a importância de construir sistemas resilientes em um mundo cada vez mais conectado.
+            Olá! Meu nome é Maicon e sou apaixonado por tecnologia, redes e cibersegurança. Meu interesse na área começou pela curiosidade em entender como sistemas funcionam — e principalmente como protegê-los.
           </p>
           <p>
-            Atualmente, meu foco principal é aprofundar meus conhecimentos em <span className="text-cyber-green">segurança ofensiva e defensiva</span>, construindo laboratórios práticos e participando de desafios CTF (Capture The Flag).
+            Atualmente, estou aprofundando meus conhecimentos em <span className="text-cyber-green">segurança ofensiva e defensiva</span>, construindo laboratórios práticos voltados para SOC, análise de logs e monitoramento de ambientes.
           </p>
           <p>
             Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:
