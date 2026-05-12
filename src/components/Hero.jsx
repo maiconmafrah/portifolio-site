@@ -3,15 +3,17 @@ import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-screen flex flex-col items-start justify-center max-w-5xl mx-auto">
+    <section className="relative w-full overflow-hidden min-h-screen flex flex-col items-center justify-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyber-green/5 rounded-full blur-[120px] -z-10" />
       <div className="scanline" />
       
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="mb-12 relative z-20 w-full"
-      >
+      <div className="w-full max-w-5xl mx-auto px-4 pt-32 pb-20 z-10 flex flex-col items-start">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mb-12 relative w-full"
+        >
         <p className="text-cyber-green font-mono mb-5 ml-1">
           Olá, meu nome é
         </p>
@@ -31,10 +33,8 @@ export default function Hero() {
         >
           Confira meus projetos!
         </a>
-      </motion.div>
-
-      {/* Decorative elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyber-green/5 rounded-full blur-[120px] -z-10" />
+        </motion.div>
+      </div>
     </section>
   );
 }

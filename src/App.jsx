@@ -12,6 +12,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Footer from './components/Footer';
+import ParticleBackground from './components/ParticleBackground';
 
 export default function App() {
   useEffect(() => {
@@ -63,9 +64,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-cyber-dark selection:bg-cyber-green selection:text-[#0a192f]">
+    <div className="min-h-screen bg-cyber-dark selection:bg-cyber-green selection:text-[#0a192f] relative">
+      <ParticleBackground />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Experience />
