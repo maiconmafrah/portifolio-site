@@ -26,7 +26,7 @@ export default function ParticleBackground() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         // Smaller stars move slower (parallax)
-        this.size = Math.random() * 1.5 + 0.5;
+        this.size = Math.random() * 1.5 + 2.5;
         this.baseSpeed = this.size * 0.15;
         this.vy = -(Math.random() * this.baseSpeed + 0.1);
         this.vx = (Math.random() - 0.5) * 0.1;
@@ -69,7 +69,7 @@ export default function ParticleBackground() {
         ctx.fill();
         
         // Give larger stars a subtle glow
-        if (this.size > 1.2) {
+        if (this.size > 3.2) {
           ctx.shadowBlur = 5;
           ctx.shadowColor = 'rgba(100, 255, 218, 0.5)';
         } else {
@@ -80,7 +80,7 @@ export default function ParticleBackground() {
     
     const initStars = () => {
       stars = [];
-      const numStars = Math.floor((canvas.width * canvas.height) / 4000); // More particles for starfield
+      const numStars = Math.floor((canvas.width * canvas.height) / 10000); // Fewer particles
       for (let i = 0; i < numStars; i++) {
         stars.push(new Star());
       }
@@ -111,7 +111,11 @@ export default function ParticleBackground() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 z-0 pointer-events-none"
-      style={{ opacity: 0.8 }}
+      style={{ 
+        opacity: 0.8,
+        maskImage: 'radial-gradient(ellipse at center, transparent 25%, black 70%)',
+        WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 25%, black 70%)'
+      }}
     />
   );
 }
