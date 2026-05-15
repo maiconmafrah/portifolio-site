@@ -30,8 +30,7 @@ export default function App() {
           const startPosition = window.scrollY;
           // Subtract 80px to account for the fixed navbar height
           const distance = targetPosition - startPosition - 80;
-          // Duration in milliseconds (1600ms = 1.6s for a balanced scroll)
-          const duration = 1600;
+          const duration = 1000;
           let start = null;
 
           const animation = (currentTime) => {
@@ -39,7 +38,7 @@ export default function App() {
             const timeElapsed = currentTime - start;
             const progress = Math.min(timeElapsed / duration, 1);
             
-            // Easing function: easeInOutQuart (starts slow, speeds up, ends slow)
+            // Easing function: easeInOutQuart
             const ease = progress < 0.5 
               ? 8 * progress * progress * progress * progress 
               : 1 - Math.pow(-2 * progress + 2, 4) / 2;

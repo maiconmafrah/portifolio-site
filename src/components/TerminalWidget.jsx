@@ -23,6 +23,7 @@ export default function TerminalWidget() {
   
   const endOfTerminalRef = useRef(null);
   const inputRef = useRef(null);
+  const scrollContainerRef = useRef(null);
 
   const AVAILABLE_CMDS = [
     'help', 'about', 'skills', 'projects', 'certs', 
@@ -30,23 +31,14 @@ export default function TerminalWidget() {
   ];
 
   const scrollToBottom = () => {
-    endOfTerminalRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = scrollContainerRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => {
     scrollToBottom();
   }, [history]);
-
-  useEffect(() => {
-    // Focus terminal input when clicking anywhere on the terminal content
-    const handleGlobalClick = (e) => {
-      // Allow user to copy text if they have a selection
-      if (document.getSelection().toString().length > 0) return;
-      if (inputRef.current) inputRef.current.focus();
-    };
-    document.addEventListener('click', handleGlobalClick);
-    return () => document.removeEventListener('click', handleGlobalClick);
-  }, []);
 
   const handleCommand = (rawCmd) => {
     const cmdStr = rawCmd.trim();
@@ -225,6 +217,7 @@ Firewall status: ACTIVE`;
       
       {/* Terminal Content Box */}
       <div 
+        ref={scrollContainerRef}
         className="p-4 h-[350px] overflow-y-auto font-mono text-sm text-gray-300 relative z-10 custom-scrollbar flex flex-col"
         onClick={() => inputRef.current?.focus()}
       >
