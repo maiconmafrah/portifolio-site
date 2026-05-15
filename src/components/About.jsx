@@ -55,16 +55,12 @@ export default function About() {
           
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[300px]">
             <a 
-              href="#contact" 
+              href="https://www.linkedin.com/in/maiconmafra/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex-1 text-center py-3 px-4 bg-cyber-green text-black font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-cyber-green/80 transition-colors"
             >
               Fale Comigo
-            </a>
-            <a 
-              href="#" 
-              className="flex-1 text-center py-3 px-4 border border-cyber-green text-cyber-green font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-cyber-green/10 transition-colors"
-            >
-              Baixar CV
             </a>
           </div>
         </div>
