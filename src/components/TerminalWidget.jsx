@@ -78,16 +78,15 @@ Cybersecurity Analyst
 Blue Team / Infrastructure`;
         break;
       case 'projects':
-        output = `[1] SIEM Lab
-[2] Active Directory Lab
-[3] Linux Hardening
-[4] Firewall Monitoring
+        output = `[1] SIEM Lab Wazuh
+[2] Vulnerability Scanner (Python)
+[3] Desafio Phishing (Social Engineering)
 
 Type "open <number>" to view a project.`;
         break;
       case 'open':
         const num = args[1];
-        if (['1','2','3','4'].includes(num)) {
+        if (['1','2','3'].includes(num)) {
           output = `Opening project [${num}]... (Redirecting)`;
           // Using a timeout to simulate opening
           setTimeout(() => {
@@ -95,23 +94,23 @@ Type "open <number>" to view a project.`;
             if (el) el.scrollIntoView({ behavior: 'smooth' });
           }, 500);
         } else {
-          output = `Invalid project number. Use "projects" to see the list.`;
+          output = `Invalid project number (1-3). Use "projects" to see the list.`;
           outColor = 'text-red-400';
         }
         break;
       case 'skills':
-        output = `Linux        █████████░
-Networking   ████████░░
-SIEM         ███████░░░
+        output = `Linux        ██████░░░░
+Networking   ██████░░░░
+SIEM         ████░░░░░░
 Python       █████░░░░░
-Docker       ██████░░░░`;
+Docker       ████░░░░░░`;
         outColor = 'text-cyber-green';
         break;
       case 'certs':
-        output = `- Cisco Networking Basics
-- Linux Studies
-- TryHackMe Paths
-- Cybersecurity Labs`;
+        output = `- Cisco Networking Basics (Em Progresso)
+- Linux Administration & Hardening (Em Progresso)
+- TryHackMe Learning Paths (Em Progresso)
+- Cybersecurity & SOC Labs (Em Progresso)`;
         break;
       case 'contact':
         output = `Email: maiconmafra04@gmail.com

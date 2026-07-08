@@ -3,12 +3,12 @@ import { motion } from 'motion/react';
 import { ShieldAlert, Cpu, Network, Database, Code, Search } from 'lucide-react';
 
 const SKILLS = [
-  { name: 'Penetration Testing', icon: <Search size={24} />, level: 85, tags: ['Metasploit', 'Nmap', 'Burp Suite'] },
-  { name: 'Network Security', icon: <Network size={24} />, level: 90, tags: ['Wireshark', 'Firewalls', 'VPNs'] },
-  { name: 'Incident Response', icon: <ShieldAlert size={24} />, level: 75, tags: ['SIEM', 'Forensics', 'Logging'] },
-  { name: 'Cloud Security', icon: <Database size={24} />, level: 80, tags: ['AWS', 'Azure', 'IAM'] },
-  { name: 'Scripting', icon: <Code size={24} />, level: 88, tags: ['Python', 'Bash', 'Go'] },
-  { name: 'System Admin', icon: <Cpu size={24} />, level: 92, tags: ['Linux', 'Windows Server', 'Docker'] },
+  { name: 'Penetration Testing', icon: <Search size={24} />, level: 45, tags: ['Metasploit', 'Nmap', 'Burp Suite'] },
+  { name: 'Network Security', icon: <Network size={24} />, level: 65, tags: ['Wireshark', 'Firewalls', 'VPNs'] },
+  { name: 'Incident Response', icon: <ShieldAlert size={24} />, level: 40, tags: ['SIEM', 'Forensics', 'Logging'] },
+  { name: 'Cloud Security', icon: <Database size={24} />, level: 35, tags: ['AWS', 'Azure', 'IAM'] },
+  { name: 'Scripting', icon: <Code size={24} />, level: 55, tags: ['Python', 'Bash', 'Go'] },
+  { name: 'System Admin', icon: <Cpu size={24} />, level: 65, tags: ['Linux', 'Windows Server', 'Docker'] },
 ];
 
 export default function Skills() {

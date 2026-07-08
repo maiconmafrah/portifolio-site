@@ -7,28 +7,37 @@ const EXPERIENCES = [
     id: 1,
     type: 'work',
     title: 'Assistente de Infraestrutura',
-    company: 'Tech Security Corp',
+    company: 'Durín Indústria de Plásticos',
     date: '2025 - Presente',
-    description: 'Atuação em testes de invasão em aplicações web, análise de vulnerabilidades e elaboração de relatórios técnicos. Auxílio na resposta a incidentes de segurança.',
-    skills: ['Burp Suite', 'Nmap', 'OWASP Top 10', 'Relatórios']
+    description: 'Suporte a infraestrutura de TI, monitoramento de redes, configuração de roteadores/switches, administração de servidores e suporte técnico à equipe.',
+    skills: ['Redes', 'Suporte', 'Servidores', 'Sistemas Operacionais', 'Infraestrutura']
   },
   {
     id: 2,
     type: 'education',
-    title: 'Tecnólogo em Redes de computadores',
+    title: 'Tecnólogo em Redes de Computadores',
     company: 'Unisosiesc',
     date: '2022 - 2025',
-    description: 'Foco em redes de computadores, sistemas operacionais e segurança da informação.',
-    skills: ['C/C++', 'Redes', 'Sistemas Operacionais', 'Criptografia']
+    description: 'Foco em redes de computadores, protocolos de comunicação, sistemas operacionais e fundamentos de segurança da informação.',
+    skills: ['Redes', 'Protocolos', 'Sistemas Operacionais', 'Segurança']
   },
   {
     id: 3,
-    type: 'work',
-    title: 'Pós em Segurança Cibernética',
+    type: 'education',
+    title: 'Pós-Graduação em Segurança Cibernética',
     company: 'Uninter',
     date: '2025 - 2026',
-    description: 'Monitoramento de redes, configuração de firewalls e switches, e suporte a servidores Linux e Windows.',
-    skills: ['Linux', 'Firewalls', 'Monitoramento', 'Suporte']
+    description: 'Especialização avançada com foco em segurança defensiva, análise de vulnerabilidades, auditoria de segurança e resposta a incidentes.',
+    skills: ['Defesa Cibernética', 'Análise de Riscos', 'Auditoria', 'Pentest']
+  },
+  {
+    id: 4,
+    type: 'education',
+    title: 'Pós-Graduação em Ciência de Dados e Inteligência Artificial',
+    company: 'Uninter',
+    date: '2026 - 2026',
+    description: 'Especialização focada em processamento e análise de grandes volumes de dados, modelagem preditiva, algoritmos de Machine Learning e Inteligência Artificial.',
+    skills: ['Python', 'Machine Learning', 'Análise de Dados', 'IA']
   }
 ];
 

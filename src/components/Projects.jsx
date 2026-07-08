@@ -19,11 +19,11 @@ const PROJECTS = [
     demo: '#'
   },
   {
-    title: 'Plataforma de Write-ups CTF',
-    description: 'Um blog dedicado a documentar soluções para máquinas do HackTheBox e TryHackMe, com foco em escalonamento de privilégios e movimentação lateral.',
-    tags: ['React', 'Markdown', 'CyberSec', 'HTB'],
-    github: '#',
-    demo: '#'
+    title: 'Desafio Phishing (Social Engineering)',
+    description: 'Simulação educacional de engenharia social para análise de segurança e conscientização. Demonstração prática de credential harvesting utilizando setoolkit no Kali Linux para clonagem de interface de autenticação do Facebook.',
+    tags: ['Kali Linux', 'setoolkit', 'Social Engineering', 'Phishing Lab'],
+    github: 'https://github.com/maiconmafrah/cibersecurity-desafio-phishing',
+    demo: 'https://github.com/maiconmafrah/cibersecurity-desafio-phishing'
   }
 ];
 
